@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="max-w-6xl mx-auto px-5">
+    <header>
+      <div class="flex justify-end">
+      <button class="md:hidden" id="button">
+          <svg  xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+      </button>
+  </div>
+      <div class="mt-2">
+          <ul class="md:flex hidden font-medium justify-end md:space-x-8 py-5" id="menu">
+              <li><a href="" class="hover:underline hover:text-red-500">Blog</a></li>
+              <li><a href="" class="hover:underline hover:text-red-500">Works</a></li>
+              <li><a href="" class="hover:underline hover:text-red-500">Contact</a></li>
+          </ul>
+      </div>
+  </header>
+  <script>
+      const button =document.getElementById('button');
+      const menu = document.getElementById('menu');
+
+      button.addEventListener('click', function(){
+          menu.classList.toggle('hidden');
+
+      });
+  </script>
+    <!-- banner -->
+    <div class="grid md:grid-cols-3 py-24">
+      <div class="md:col-span-2 order-2 md:order-1">
+        <div class="font-bold md:text-5xl text-2xl md:leading-[60px] md:mt-0 mt-10 text-center md:text-left">
+          <h2>Hi, I am John,</h2>
+          <h2>Creative Technologist</h2>
+        </div>
+        <div>
+          <p class="text-base my-5 text-center md:text-left">Amet minim mollit non deserunt ullamco est sit aliqua dolor
+            do amet sint. Velit
+            officia consequat duis enim
+            velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+        <div class="text-center md:text-left">
+          <a href=""
+            class="inline-block bg-red-500 py-4 px-8 rounded-2xl text-[20px] font-bold text-white hover:bg-black">Download
+            Resume</a>
+        </div>
+      </div>
+      <div class="md:col-span-1 order-1 md:order-2">
+        <img src="/ass/src/image/Ellipse 1.jpg" alt="" class="md:ml-auto mx-auto md:mr-0">
+      </div>
+    </div>
+  </div>
+  <!-- content -->
+  <div class="bg-[#EDF7FA] py-10">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="flex justify-center md:justify-between md:py-5">
+        <h2 class="text-xl">Recent posts</h2>
+        <span class="text-[#00ABCC] hidden md:inline-block hover:underline hover:text-red-500"><a href="">View
+            all</a></span>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white px-5 py-8 transition ease-in-out duration-300 hover:shadow-2xl group hover:bg-yellow-100">
+          <h3 class="mb-5"><a href="" class="text-2xl font-bold group-hover:underline hover:text-blue-500">Making a
+              design system from scratch</a></h3>
+          <div class="flex space-x-4 text-[#21243D] mb-5">
+            <span>12 Feb 2020</span>
+            <span>|</span>
+            <span>Design, Pattern</span>
+          </div>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+            velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+        <div class="bg-white px-5 py-8 transition ease-in-out duration-300 hover:shadow-2xl group hover:bg-yellow-100">
+          <h3><a href="" class="mb-5 text-2xl font-bold group-hover:underline hover:text-blue-500"> Creating pixel
+              perfect icons in Figma</a></h3>
+          <div class="flex space-x-4 text-[#21243D] mb-5">
+            <span>12 Feb 2020</span>
+            <span>|</span>
+            <span>Figma,Icon Design</span>
+          </div>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+            velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="py-5  flex justify-center md:justify-between">
+      <h2 class="text-xl">Featured works</h2>
+    </div>
+    <div>
+      <div class="grid md:grid-cols-[246px,auto] gap-8 border-b py-8">
+        <div>
+          <img src="/ass/src/image/Rectangle 30.jpg" alt="" class="w-full">
+        </div>
+        <div>
+          <h3><a href="" class="text-[#21243D] text-[28px] font-bold hover:text-blue-500">Designing Dashboards</a>
+          </h3>
+          <div class="flex space-x-4 items-center py-5">
+            <span class="inline-block bg-[#142850] px-2 font-bold text-white rounded-full">2020</span>
+            <span class="text-[#8695A4]">Dashboard</span>
+          </div>
+          <p class="text-[#21243D]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+            officia consequat duis enim
+            velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-[246px,auto] gap-8 border-b py-8">
+        <div><img src="/ass/src/image/Rectangle 32.jpg" alt="" class="w-full">
+        </div>
+        <div>
+          <h3><a href="" class="text-[#21243D] text-[28px] font-bold hover:text-blue-500"> Vibrant Portraits of
+              2020</a></h3>
+          <div class="flex space-x-4 items-center py-5">
+            <span class="inline-block bg-[#142850] px-2 font-bold text-white rounded-full">2018</span>
+            <span class="text-[#8695A4]">Illustration</span>
+          </div>
+          <p class="text-[#21243D]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+            officia consequat duis enim
+            velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-[246px,auto] gap-8 border-b py-8">
+        <div><img src="/ass/src/image/Rectangle 34.jpg" alt="" class="w-full"></div>
+        <div>
+          <h3><a href="" class="text-[#21243D] text-[28px] font-bold hover:text-blue-500"> 36 Days of Malayalam
+              type</a></h3>
+          <div class="flex space-x-4 items-center py-5">
+            <span class="inline-block bg-[#142850] px-2 font-bold text-white rounded-full">2018</span>
+            <span class="text-[#8695A4]">Typography</span>
+          </div>
+          <p class="text-[#21243D]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+            officia consequat duis enim
+            velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <div class="max-w-6xl mx-auto px-5 mt-32">
+    <div class="flex justify-center space-x-8 mb-5">
+      <a href=""> <img src="/ass/src/image/fb.png" alt="">
+      </a>
+      <a href=""> <img src="/ass/src/image/insta.png" alt="">
+      </a>
+      <a href=""> <img src="/ass/src/image/Group.png" alt="">
+      </a>
+      <a href=""> <img src="/ass/src/image/Linkedin.png" alt="">
+      </a>
+    </div>
+    <div class="text-center">
+      <span>Copyright ©2020 All rights reserved</span>
+    </div>
+  </div>
+</body>
+
+</html>

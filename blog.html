@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="max-w-6xl mx-auto px-5">
+        <header>
+            <div class="flex justify-end">
+            <button class="md:hidden" id="button">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+            </button>
+        </div>
+            <div class="mt-2">
+                <ul class="md:flex hidden font-medium justify-end md:space-x-8 py-5" id="menu">
+                    <li><a href="" class="hover:underline hover:text-red-500">Blog</a></li>
+                    <li><a href="" class="hover:underline text-red-500">Works</a></li>
+                    <li><a href="" class="hover:underline hover:text-red-500">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+        <script>
+            const button =document.getElementById('button');
+            const menu = document.getElementById('menu');
+
+            button.addEventListener('click', function(){
+                menu.classList.toggle('hidden');
+
+            });
+        </script>
+    </div>
+    <div class="max-w-4xl mx-auto px-5">
+        <div class="mt-20">
+            <div class="my-10">
+                <h1 class="text-[44px] font-bold text-[#21243D]"><a href=""> Blog</a></h1>
+            </div>
+            <div class="border-b py-3">
+                <h2 class="md:text-[30px] font-medium hover:underline hover:text-blue-500"><a href=""> UI Interactions of the week</a></h2>
+                <div class="md:flex md:space-x-4 py-3">
+                    <span>12 Feb 2019</span>
+                    <span>|</span>
+                    <span class="text-[#8695A4]">Express,Handlebars</span>
+                </div>
+                <p class="text-[#21243D] md:w-[682px]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                    Velit officia consequat
+                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+            <div class="border-b py-3">
+                <h2 class="md:text-[30px] font-medium hover:underline hover:text-blue-500"><a href=""> UI Interactions of the week</a></h2>
+                <div class="md:flex md:space-x-4 py-3">
+                    <span>12 Feb 2019</span>
+                    <span>|</span>
+                    <span class="text-[#8695A4]">Express,Handlebars</span>
+                </div>
+                <p class="text-[#21243D] md:w-[682px]" >Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                    Velit officia consequat
+                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+            <div class="border-b py-3">
+                <h2 class="md:text-[30px] font-medium hover:underline hover:text-blue-500"><a href=""> UI Interactions of the week</a></h2>
+                <div class="md:flex md:space-x-4 py-3">
+                    <span>12 Feb 2019</span>
+                    <span>|</span>
+                    <span class="text-[#8695A4]">Express,Handlebars</span>
+                </div>
+                <p class="text-[#21243D] md:w-[682px]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                    Velit officia consequat
+                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+            <div class="border-b py-3">
+                <h2 class="md:text-[30px] font-medium hover:underline hover:text-blue-500"><a href=""> UI Interactions of the week</a></h2>
+                <div class="md:flex md:space-x-4 py-3 ">
+                    <span>12 Feb 2019</span>
+                    <span>|</span>
+                    <span class="text-[#8695A4]">Express,Handlebars</span>
+                </div>
+                <p class="text-[#21243D] md:w-[682px]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                    Velit officia consequat
+                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+        </div>
+        <div class="mt-20">
+            <div class="flex justify-center space-x-8 mb-5">
+                <a href=""> <img src="/ass/src/image/fb.png" alt="">
+                </a>
+                <a href=""> <img src="/ass/src/image/insta.png" alt="">
+                </a>
+                <a href=""> <img src="/ass/src/image/Group.png" alt="">
+                </a>
+                <a href=""> <img src="/ass/src/image/Linkedin.png" alt="">
+                </a>
+            </div>
+            <div class="text-center">
+                <span>Copyright ©2020 All rights reserved</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
